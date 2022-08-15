@@ -3,7 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/drawable-v24/ic_login_enter_icon_.xml" value="0.1665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/drawable-v24/ic_password_padlock.xml" value="0.1665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/drawable/shape_line.xml" value="0.1665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragmen_assistant.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_client_history.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_history.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_history_client_order.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_list.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_main.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_pr_his_product.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_product.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_sign_in.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_supervisor.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_wh_proposal_list.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/fragment_wh_proposal_show.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/VivianTest/app/src/main/res/layout/registration_client.xml" value="0.1" />
       </map>
     </option>
   </component>

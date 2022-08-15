@@ -1,10 +1,14 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id("androidx.navigation.safeargs.kotlin")
+    id 'kotlin-parcelize'
 }
 
 android {
     compileSdk 31
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.example.viviantest"
@@ -29,15 +33,54 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
+ext {
+    lifecycle_version = "2.3.1"
+    koin_version = '3.0.2'
+}
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.annotation:annotation:1.3.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0"
+    implementation('com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2')
+
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.8'
+
+    //RxJava
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.0'
+
+    //koin
+    implementation "io.insert-koin:koin-android:$koin_version"
+    implementation "io.insert-koin:koin-android-ext:$koin_version"
+
+    //LiveData and ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+    //navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.1"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.1"
+    // Feature module Support
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:2.5.1"
+    // Testing Navigation
+    androidTestImplementation "androidx.navigation:navigation-testing:2.5.1"
 }
