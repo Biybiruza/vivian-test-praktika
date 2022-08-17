@@ -19,12 +19,15 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-        val modules = listOf(remoteModule, localModule, viewModelModule, adapterModule)
+        val module = listOf(remoteModule, localModule, viewModelModule, adapterModule)
+//        val koin: KoinApplication = create(this)
+//            .modules(modules)
+//        startKoin(koin)
         startKoin {
             androidLogger()
             androidContext(this@App)
             androidFileProperties()
-            modules(remoteModule, localModule, viewModelModule, adapterModule)
+            koin.loadModules(module)
         }
     }
 }

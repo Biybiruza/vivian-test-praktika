@@ -14,10 +14,11 @@
         android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.VivianTest"
-        tools:replace="android:theme">
+        tools:replace="android:theme"
+        tools:targetApi="m">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:configChanges="orientation|keyboardHidden"
             android:windowSoftInputMode="stateHidden|adjustPan"
             android:exported="true">
